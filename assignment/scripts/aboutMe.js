@@ -63,7 +63,7 @@ if ( luckyNumber === 2 || adventurous === true) {
 // and console logs "Oh no, I have too many pets!"
 // if the value of `pets` is greater than the value of `allowedPets`.
 if ( pets >= allowedPets ){
-  console.log( 'I can have more pets');
+  console.log( 'I can have more pets', pets);
 }
 
 // STRETCH GOALS:
