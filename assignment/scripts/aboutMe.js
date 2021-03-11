@@ -16,7 +16,7 @@ let fullName = firstName +  ' ' + lastName
 
 console.log( "fullName", fullName );
 // 5 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
-let luckyNumber = '17';
+let luckyNumber = 17;
 // 6 - Console log this sentence, adding in the variables you created above:
 console.log( "luckyNumber", luckyNumber );
 // 'My name is (full name), and I think (lucky number) is a winner!'.
@@ -25,7 +25,7 @@ let sentence = 'My name is ' + fullName + ' and I think ' + luckyNumber + ' is a
 
 console.log( "full name sentence", sentence );
 // 7 - Create a variable named `adventurous` and set it to a boolean value (true or false)
-let adventurous = "true";
+let adventurous = true;
 
 console.log( "I am adventurous", adventurous );
 // 8 - Create a variable named `food`, and set its value to a string of your favorite food
@@ -36,7 +36,7 @@ console.log( "my favorite food is", food );
 let pets = 0;
 console.log( "Number of Pets I have: ", pets);
 // 10 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
-let friendsPets = "1";
+let friendsPets = 1;
 
 console.log( "My friend has Pets", friendsPets);
 // 11 - Add two pets to your `pets` variable
@@ -44,17 +44,18 @@ pets += 2;
 
 console.log( "pets", pets);
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
-let allowedPets = "2";
+let allowedPets = 2;
 
 console.log("allowedPets:", allowedPets);
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!",
 // if it's not true, console log "How about we stay home?"
-if ( adventurous = true ) {
+if ( adventurous === true ) {
   console.log("Adventures are great!", adventurous);
 }
 // 14 - Create a compound conditional: if luckyNumber is 2 and adventurous is true,
 // console log "Roll the dice!"
 if ( luckyNumber === 2 || adventurous === true) {
+  console.log("Roll the Dice");
 }
 
 // 15 - Write a conditional that console logs "I can have more pets!"
@@ -64,7 +65,10 @@ if ( luckyNumber === 2 || adventurous === true) {
 // if the value of `pets` is greater than the value of `allowedPets`.
 if ( pets >= allowedPets ){
   console.log( 'I can have more pets', pets);
+} else if ( pets = allowedPets ){
+  console.log('I have enough pets', pets);
 }
+
 
 // STRETCH GOALS:
 
@@ -80,7 +84,7 @@ if ( pets >= allowedPets ){
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
 adventurous = true;
 
-if( adventurous = false){
+if( adventurous === false){
   console.log("How about we stay home?");
 } else {
   console.log("Adventures are great!");
