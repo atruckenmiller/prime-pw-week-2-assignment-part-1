@@ -51,10 +51,12 @@ console.log("allowedPets:", allowedPets);
 // if it's not true, console log "How about we stay home?"
 if ( adventurous === true ) {
   console.log("Adventures are great!", adventurous);
+} else if (adventurous === false ) {
+  console.log('How about we stay home?');
 }
 // 14 - Create a compound conditional: if luckyNumber is 2 and adventurous is true,
 // console log "Roll the dice!"
-if ( luckyNumber === 2 || adventurous === true) {
+if ( luckyNumber === 2 && adventurous === true) {
   console.log("Roll the Dice");
 }
 
@@ -63,10 +65,18 @@ if ( luckyNumber === 2 || adventurous === true) {
 // console logs "I have enough pets" if the value of `pets` is equal to the value of `allowedPets`,
 // and console logs "Oh no, I have too many pets!"
 // if the value of `pets` is greater than the value of `allowedPets`.
-if ( pets >= allowedPets ){
-  console.log( 'I can have more pets', pets);
-} else if ( pets = allowedPets ){
+
+allowedPets == 2
+pets == 1
+if ( pets < allowedPets ){
+  console.log('I can have more pets', pets);
+} else if ( pets === allowedPets ){
+  // if the value of 'pets' is equal to the value of 'allowedPets',
+  // console logs "I have enough pets"
   console.log('I have enough pets', pets);
+} else if(pets > allowedPets) {
+  // if the value of 'pets' is greater than the value of 'allowedPets'
+  console.log("Oh no, I have too many pets!");
 }
 
 
@@ -79,15 +89,19 @@ if ( pets >= allowedPets ){
 // console.log `mostPets` after the conditional has run.
 
 
+// Refactoring - change the code to maybe make it better (more readable, more efficient)
+
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
 
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
-adventurous = true;
 
-if( adventurous === false){
+adventurous === true;
+
+if ( adventurous === false){
   console.log("How about we stay home?");
-} else {
-  console.log("Adventures are great!");
-};
+} else if (adventurous === true){
+  console.log("Adventures are great!")
+}
 
-console.log((adventurous = true)? "How about we stay home?" : "Adventures are great!");
+adventurous ? console.log('How about we stay home?')
+: console.log("Adventures are great!");
